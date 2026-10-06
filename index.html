@@ -1,28 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list </title>
+    <title>To Do List</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-     <section class="card">
-        <h2>To Do List </h2>
+
+    <section class="card">
+
+        <h2>To Do List</h2>
         <p class="description">Tambahkan Tugas</p>
+
         <div class="input-container">
-            <input type="text" id="input-task" placeholder="Tambahkan To Do List" autocomplete="off">
-            <button id="btn-add" class="btn btn-success"> Tambah</button>
+            <input
+                type="text"
+                id="input-task"
+                placeholder="Tambahkan To Do List"
+                autocomplete="off"
+            >
+            <button id="btn-add">Tambah</button>
         </div>
+
+        <div class="stats-section">
+
+            <div class="stat-box">
+                <strong id="total-tasks">0</strong>
+                <span>Total Tugas</span>
+            </div>
+
+            <div class="stat-box">
+                <strong id="completed-tasks">0</strong>
+                <span>Selesai</span>
+            </div>
+
+            <div class="stat-box">
+                <strong id="pending-tasks">0</strong>
+                <span>Belum Selesai</span>
+            </div>
+
+        </div>
+
         <div class="list-container">
-            <h3>Tugas Hari ini (<span id="amount-tasks">0</span>):</h3>
+
+            <h3>
+                Tugas Hari Ini
+                (<span id="amount-tasks">0</span>):
+            </h3>
+
             <ul id="list-tasks" class="note-list"></ul>
-            <p id="empty-massage" class="empty-state">Isi Tugas</p>
+
+            <p id="empty-message" class="empty-state">
+                Belum ada tugas
+            </p>
+
         </div>
+
+    </section>
+
     <script src="app.js"></script>
+
 </body>
 
 </html>
